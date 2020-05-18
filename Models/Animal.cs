@@ -10,5 +10,6 @@ namespace CaoLendario.Models
         private int id = 0;
         private String nome;
         private String porte;
+        private int peso;
     }
 }
