@@ -10,7 +10,7 @@ namespace CaoLendario.Models
         private DateTime data;
         private Boolean adotado;
 
-        public DateTime Data { get; set; }
+        public byte Data { get; set; }
         public Boolean Adotado { get; set; }
     }
 }
