@@ -1,58 +1,60 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using CaoLendario.Models;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
 
 namespace CaoLendario
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
+        //o método contrutor recebe a configuração de dados carregada de appsettings.json
+        public Startup(IConfiguration configuration) => Configuration = configuration;
         public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
+        //Este metodo é usado para preparar os objetos compartilhados que serão usados
+        //durante a aplicação.Este compartilhamento é chamdo de Injeção de
+        //Dependência.Por exemplo, quando um banco de dados depende das definições
+        //de um modelo para ser criado.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
-            //services.AddTransient<IInteresseRepositorio>(); 
-            //services.AddMvc();
+            //configura os serviços oferecidos pela Entity Framework Core para a classe contexto do banco de dados
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //options.UseSqlServer(Configuration["Data:SportStoreProdutos:ConnectionString"]));
+            //Associa o Repositório EFProdutoRepositorio à interface IProdutoRepositorio
+            //services.AddTransient<IProdutoRepositorio, EFProdutoRepositorio>();
+            //services.AddTransient<IFabricanteRepositorio, EFFabricanteRepositorio>();
+            //habilita o ASP.NET Core
+            services.AddMvc();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        //Este metodo é usado para preparar os componentes que recebem e processam
+        //requisições HTTP.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
+                // Mostra detalhes das exceções que ocorrem na aplicação.
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
-
-            app.UseHttpsRedirection();
+            // Adiciona uma mensagem de resposta HTTP, como por exemplo 404 Not Found Responses.
+            app.UseStatusCodePages();
+            // habilita o suporte para arquivos contidos em wwwroot, como css e javascript
             app.UseStaticFiles();
-
             app.UseRouting();
 
-            app.UseAuthorization();
-
+            //definimos que a rota default será definida pela
+            //invocação da action List que está no controller Produto.
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapControllerRoute(
+                name: "default",
+                pattern: "{controller}/{action}/{id?}",
+                defaults: new { controller = "Animal", action = "List" });
             });
+            //ativa a população do banco de dados quando a aplicação for iniciada          
+            //SeedData.EnsurePopulated(app);
         }
     }
 }
