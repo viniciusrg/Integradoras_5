@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore
+using Microsoft.EntityFrameworkCore;
 
 namespace CaoLendario.Models
 {
@@ -17,7 +17,6 @@ namespace CaoLendario.Models
             context = ctx;
         }
         public IQueryable<ProcedimentosPreAdocao> context.ProcedimentosPreAdocao;
-        //a
         public void Create(ProcedimentosPreAdocao procedimentosPreAdocao)
         {
             context.Add(procedimentosPreAdocao);
