@@ -7,5 +7,12 @@ namespace CaoLendario.Controllers
 {
     public class AnimalControllers
     {
+        private ApplicationDbContext context;
+
+        public AnimalController(IAnimalRepositorio repo, ApplicationDbContext ctx)
+        {
+            repositorio = repo;
+            context = ctx;
+        }
     }
 }
