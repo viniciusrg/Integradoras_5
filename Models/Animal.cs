@@ -7,5 +7,9 @@ namespace CaoLendario.Models
 {
     public class Animal
     {
+        private int id = 0;
+        private String nome;
+        private String porte;
+        private int peso;
     }
 }
