@@ -9169,13 +9169,20 @@
     ]
   },
   "packageFolders": {
+<<<<<<< Updated upstream
     "C:\\Users\\whaly\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
 >>>>>>> grupo3
+=======
+    "C:\\Users\\Carlos\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+>>>>>>> Stashed changes
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Integradoras\\Integradoras_5\\CaoLendario.csproj",
       "projectName": "CaoLendario",
@@ -9199,6 +9206,22 @@
         "C:\\Users\\whaly\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> grupo3
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+      "projectUniqueName": "C:\\Users\\Carlos\\Documents\\Ciencia da Computação\\5º Perído\\Atividade Integradora\\Integradoras_5\\CaoLendario.csproj",
+      "projectName": "CaoLendario",
+      "projectPath": "C:\\Users\\Carlos\\Documents\\Ciencia da Computação\\5º Perído\\Atividade Integradora\\Integradoras_5\\CaoLendario.csproj",
+      "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Carlos\\Documents\\Ciencia da Computação\\5º Perído\\Atividade Integradora\\Integradoras_5\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+>>>>>>> Stashed changes
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -9266,6 +9289,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+<<<<<<< Updated upstream
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -9275,6 +9299,9 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+>>>>>>> Stashed changes
       }
     }
   },

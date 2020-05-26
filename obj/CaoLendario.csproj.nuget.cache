@@ -1,9 +1,13 @@
 {
   "version": 1,
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   "dgSpecHash": "PmJCltGPKwhl8KszPgN+KZMpS1hsLwhzMCstIPRwNBSPYQ0bzfEOhKxabPvHGxXsX0Y7LaBo3UBiokb1GMIlHw==",
 =======
   "dgSpecHash": "v2CB7jJXmT9CpCzNtEhowgPlyk3WNwCVXdE8itWD80MjiM3ubWnn2U+O3HtMIDxBK1fRi4AWTa2MzumtWaXf8A==",
 >>>>>>> grupo3
+=======
+  "dgSpecHash": "cew2T49qWcuolBihNkYvzTw3tx8KEzHvXj5YZBIKQkSQsbhkb2WANd5nqxNa4uP/lwtiS0IjE5XRL2q6zDcj3w==",
+>>>>>>> Stashed changes
   "success": true
 }
