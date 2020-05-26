@@ -16,8 +16,8 @@ namespace CaoLendario.Models
         public DbSet<Animal> Animais { get; set; }
         public DbSet<Interesse> Interesse { get; set; }
         public DbSet<Adotante> Adotantes { get; set; }
-        public DbSet<ProcedimentosPreAdocao> ProcedimentoPreAdocao { get; set; }
-        public DbSet<ProcedimentosPosAdocao> ProcedimentoPosAdocao { get; set; }
+        public DbSet<ProcedimentosPreAdocao> ProcedimentosPreAdocao { get; set; }
+        public DbSet<ProcedimentosPosAdocao> ProcedimentosPosAdocao { get; set; }
         public DbSet<MedicoVeterinario> MedicoVeterinario { get; set; }
 
     }
