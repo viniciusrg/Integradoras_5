@@ -13,3 +13,4 @@ bin/Debug/netcoreapp3.1/CaoLendario.runtimeconfig.json
 
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide-shm
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide-wal
+.vs/CaoLendario/v16/Server/sqlite3/storage.ide
