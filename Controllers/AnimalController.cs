@@ -3,9 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CaoLendario.Controller
+namespace CaoLendario.Controllers
 {
-    public class AnimalController
+    public class AnimalControllers
     {
+        private ApplicationDbContext context;
+
+        public AnimalController(IAnimalRepositorio repo, ApplicationDbContext ctx)
+        {
+            repositorio = repo;
+            context = ctx;
+        }
     }
 }

@@ -1,2 +1,15 @@
-.vs/
+vs/
 .obj/
+*.ide
+.vs/CaoLendario/v16/Server/sqlite3/storage.ide
+bin/Debug/netcoreapp3.1/CaoLendario.deps.json
+.vs/CaoLendario/v16/Server/sqlite3/storage.ide
+bin/Debug/netcoreapp3.1/CaoLendario.deps.json
+bin/Debug/netcoreapp3.1/CaoLendario.dll
+bin/Debug/netcoreapp3.1/CaoLendario.exe
+bin/Debug/netcoreapp3.1/CaoLendario.pdb
+bin/Debug/netcoreapp3.1/CaoLendario.runtimeconfig.dev.json
+bin/Debug/netcoreapp3.1/CaoLendario.runtimeconfig.json
+
+.vs/CaoLendario/v16/Server/sqlite3/storage.ide-shm
+.vs/CaoLendario/v16/Server/sqlite3/storage.ide-wal
