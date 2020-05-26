@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace CaoLendario.Models
 {
+<<<<<<< HEAD
     public class User
     {
         private int UserID { get; set; }
@@ -17,4 +18,9 @@ namespace CaoLendario.Models
         private string uf { get; set; }
         private string telefone { get; set; }
     }
+=======
+	public class User
+	{
+	}
+>>>>>>> develop
 }
