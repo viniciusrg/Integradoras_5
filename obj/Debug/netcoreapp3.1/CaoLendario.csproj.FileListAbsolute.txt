@@ -134,3 +134,13 @@ C:\Users\whaly\Documents\Faculdade\5º Periodo\Atividade Integradora V\Integrado
 C:\Users\whaly\Documents\Faculdade\5º Periodo\Atividade Integradora V\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.pdb
 C:\Users\whaly\Documents\Faculdade\5º Periodo\Atividade Integradora V\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.MvcApplicationPartsAssemblyInfo.cache
 >>>>>>> grupo3
+C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.csprojAssemblyReference.cache
+C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\staticwebassets\CaoLendario.StaticWebAssets.Manifest.cache
+C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\staticwebassets\CaoLendario.StaticWebAssets.xml
+C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.MvcApplicationPartsAssemblyInfo.cache
+C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.RazorAssemblyInfo.cache
+C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.RazorAssemblyInfo.cs
+C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.AssemblyInfoInputs.cache
+C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.AssemblyInfo.cs
+C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.dll
+C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.pdb
