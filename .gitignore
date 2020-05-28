@@ -21,3 +21,5 @@ obj/CaoLendario.csproj.nuget.g.props
 .vs/CaoLendario/DesignTimeBuild/.dtbcache
 obj/Debug/netcoreapp3.1/CaoLendario.assets.cache
 obj/Debug/netcoreapp3.1/CaoLendario.csprojAssemblyReference.cache
+obj/Debug/netcoreapp3.1/CaoLendario.assets.cache
+obj/Debug/netcoreapp3.1/CaoLendario.csprojAssemblyReference.cache
