@@ -16,7 +16,7 @@ namespace CaoLendario.Models
         {
             context = ctx;
         }
-        public IQueryable<ProcedimentosPreAdocao> context.ProcedimentosPreAdocao;
+        IQueryable<ProcedimentosPreAdocao> context.ProcedimentosPreAdocao;
         public void Create(ProcedimentosPreAdocao procedimentosPreAdocao)
         {
             context.Add(procedimentosPreAdocao);
