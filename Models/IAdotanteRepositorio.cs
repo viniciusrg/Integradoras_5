@@ -7,5 +7,6 @@ namespace CaoLendario.Models
 {
 	interface IAdotanteRepositorio
 	{
+		IQueryable<Adotante> Adotantes { get; }
 	}
 }

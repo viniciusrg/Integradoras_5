@@ -7,5 +7,6 @@ namespace CaoLendario.Models
 {
 	interface IUserRepositorio
 	{
+		IQueryable<User> Users { get; }
 	}
 }
