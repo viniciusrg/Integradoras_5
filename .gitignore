@@ -13,3 +13,14 @@ bin/Debug/netcoreapp3.1/CaoLendario.runtimeconfig.json
 
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide-shm
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide-wal
+.vs/CaoLendario/v16/Server/sqlite3/storage.ide
+obj/project.assets.json
+obj/CaoLendario.csproj.nuget.g.props
+.vs/CaoLendario/v16/Server/sqlite3/storage.ide
+.vs/CaoLendario/v16/.suo
+.vs/CaoLendario/DesignTimeBuild/.dtbcache
+obj/Debug/netcoreapp3.1/CaoLendario.assets.cache
+obj/Debug/netcoreapp3.1/CaoLendario.csprojAssemblyReference.cache
+obj/Debug/netcoreapp3.1/CaoLendario.assets.cache
+obj/Debug/netcoreapp3.1/CaoLendario.csprojAssemblyReference.cache
+obj/CaoLendario.csproj.nuget.dgspec.json
