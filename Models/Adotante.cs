@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 namespace CaoLendario.Models
 {
 <<<<<<< HEAD
+	public class Adotante
+	{
+	}
+=======
     public class Adotante : User
     {
         private int AdotanteID { get; set; }
@@ -17,9 +21,5 @@ namespace CaoLendario.Models
         private enum alimentacao { Ração, Comida, Ambos, Outro}
         
     }
-=======
-	public class Adotante
-	{
-	}
->>>>>>> develop
+>>>>>>> origin/grupo2
 }
