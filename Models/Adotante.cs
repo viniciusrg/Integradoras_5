@@ -17,7 +17,4 @@ namespace CaoLendario.Models
         private enum alimentacao { Ração, Comida, Ambos, Outro}
         
     }
-
-	
-
 }
