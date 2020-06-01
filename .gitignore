@@ -1,6 +1,8 @@
 vs/
 .obj/
 *.ide
+obj/*.*
+
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide
 bin/Debug/netcoreapp3.1/CaoLendario.deps.json
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide
