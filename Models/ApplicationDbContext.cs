@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace CaoLendario.Models
 {
-    public class ApplicationDbContext : DbContext 
+    public class ApplicationDbContext : DbContext //classe que define BD
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) 
         { }
