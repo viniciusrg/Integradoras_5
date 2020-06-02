@@ -1,7 +1,7 @@
-.vs/
+vs/
 .obj/
-.bin/
-
+*.ide
+obj/*.*
 
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide
 bin/Debug/netcoreapp3.1/CaoLendario.deps.json
@@ -36,6 +36,5 @@ obj/Debug/netcoreapp3.1/CaoLendario.csprojAssemblyReference.cache
 obj/Debug/netcoreapp3.1/CaoLendario.assets.cache
 obj/Debug/netcoreapp3.1/CaoLendario.csprojAssemblyReference.cache
 .vs/CaoLendario/v16/Server/sqlite3/db.lock
-.vs/CaoLendario/v16/Server/sqlite3/storage.ide
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide
