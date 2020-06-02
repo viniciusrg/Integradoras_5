@@ -13,26 +13,14 @@ namespace CaoLendario.Controllers
     {
         private ApplicationDbContext context;
 
+        private IAnimalRepositorio repositorio;
         public AnimalController(IAnimalRepositorio repo, ApplicationDbContext ctx)
         {
             repositorio = repo;
             context = ctx;
         }
 
-        public ViewResult List(int paginaProduto = 1) => View(new FabricanteListViewModel
-        {
-            Animal = repositorio.Animal
-                .OrderBy(a => a.AnimalID)
-                .Skip((paginaProduto - 1) * PageSize)
-                .Take(PageSize),
-            PagingInfo = new PagingInfo
-            {
-                PaginaAtual = paginaProduto,
-                ItensPorPagina = PageSize,
-                TotalItens = repositorio.Fabricante.Count()
-            }
-        });
-
+     
         #region Cadastro de Animais
         [HttpGet]
         public IActionResult New()
