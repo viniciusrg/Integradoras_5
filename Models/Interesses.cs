@@ -13,5 +13,10 @@ namespace CaoLendario.Models
 
             public DateTime Data { get; set; }
             public Boolean Adotado { get; set; }
+
+            public int AnimalID { get; set; }
+            public Animal Animal { get; set; }
+            public int AdotanteID { get; set; }
+            public Adotante Adotante { get; set; }
         }
 }

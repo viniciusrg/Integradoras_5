@@ -17,6 +17,8 @@ namespace CaoLendario.Models
         private string cep { get; set; }
         private string uf { get; set; }
         private string telefone { get; set; }
+        private ICollection<ProcedimentosPosAdocao> posadocao { get; set; }
+        private ICollection<ProcedimentosPreAdocao> preadocao { get; set; }
     }
 
 

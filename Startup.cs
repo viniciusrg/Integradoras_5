@@ -11,8 +11,6 @@ using Microsoft.Extensions.Configuration;
 //using Microsoft.EntityFrameworkCore;
 //using Microsoft.EntityFrameworkCore.Design;
 //using Microsoft.EntityFrameworkCore.SqlServer;
-
-
 namespace CaoLendario
 {
     public class Startup
