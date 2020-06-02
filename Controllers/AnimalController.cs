@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using CaoLendario.Models;
+
 
 namespace CaoLendario.Controllers
 {
@@ -14,7 +14,7 @@ namespace CaoLendario.Controllers
         private ApplicationDbContext context;
 
         private IAnimalRepositorio repositorio;
-        public AnimalController(IAnimalRepositorio repo, ApplicationDbContext ctx)
+        public AnimalControllers(IAnimalRepositorio repo, ApplicationDbContext ctx)
         {
             repositorio = repo;
             context = ctx;

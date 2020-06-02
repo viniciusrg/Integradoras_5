@@ -25,7 +25,7 @@ namespace CaoLendario.Models
 
         public virtual ICollection<ProcedimentosPreAdocao> ProcedimentosPreAdocao { get; set; }
 
-        //public virtual ICollection<Interesse> Interesse { get; set; }
+        public virtual ICollection<Interesse> Interesse { get; set; }
     }
     #region Definição das Enum
     public enum TPelagem
