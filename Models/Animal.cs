@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CaoLendario.Models;
 
 namespace CaoLendario.Models
 {
@@ -22,8 +21,12 @@ namespace CaoLendario.Models
         public string HistoricoVida { get; set; }
         public string urlFoto { get; set; }
 
-    }
+        public virtual ICollection<ProcedimentosPosAdocao> ProcedimentosPosAdocao { get; set; }
 
+        public virtual ICollection<ProcedimentosPreAdocao> ProcedimentosPreAdocao { get; set; }
+
+        //public virtual ICollection<Interesse> Interesse { get; set; }
+    }
     #region Definição das Enum
     public enum TPelagem
     {
@@ -46,5 +49,3 @@ namespace CaoLendario.Models
     }
     #endregion
 }
-
-
