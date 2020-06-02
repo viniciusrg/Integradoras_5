@@ -1,6 +1,5 @@
-~/vs/*.*
-~/obj/*.*
-*.ide
+.vs/
+.obj/
 
 
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide
