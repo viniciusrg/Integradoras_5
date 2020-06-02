@@ -15,3 +15,5 @@ bin/Debug/netcoreapp3.1/CaoLendario.runtimeconfig.json
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide-wal
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide
+obj/Debug/netcoreapp3.1/CaoLendario.csprojAssemblyReference.cache
+.vs/CaoLendario/v16/.suo
