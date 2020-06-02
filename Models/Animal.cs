@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CaoLendario.Models;
 
-namespace CaoLendario.Models.Animal
+namespace CaoLendario.Models
 {
     public class Animal
     {

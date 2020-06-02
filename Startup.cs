@@ -8,9 +8,9 @@ using Microsoft.Extensions.Hosting;
 using CaoLendario.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.EntityFrameworkCore.SqlServer;
+//using Microsoft.EntityFrameworkCore;
+//using Microsoft.EntityFrameworkCore.Design;
+//using Microsoft.EntityFrameworkCore.SqlServer;
 
 
 namespace CaoLendario
@@ -26,8 +26,8 @@ namespace CaoLendario
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(Configuration["Data:CaoLendario:ConnectionString"]));
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //options.UseSqlServer(Configuration["Data:CaoLendario:ConnectionString"]));
             services.AddTransient<IAnimalRepositorio, EFAnimalRepositorio>();
             services.AddTransient<IProcedimentosPosAdocaoRepositorio, EFProcedimentosPosAdocaoRepositorio>();
             services.AddTransient<IProcedimentosPreAdocaoRepositorio, EFProcedimentosPreAdocaoRepositorio>();
@@ -54,7 +54,7 @@ namespace CaoLendario
              pattern: "{controller}/{action}/{id?}",
              defaults: new { controller = "Animal", action = "List" });
             });
-            SeedData.EnsurePopulated(app);
+            //SeedData.EnsurePopulated(app);
         }
     }
 }
