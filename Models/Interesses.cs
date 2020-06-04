@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace CaoLendario.Models
 {
 
-        public class Interesse : Adotante
+        public class Interesse
         {
             private DateTime data;
             private Boolean adotado;
