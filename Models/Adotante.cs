@@ -16,5 +16,6 @@ namespace CaoLendario.Models
         private ICollection<ProcedimentosPosAdocao> procedimentosPosAdocaos { get; set; }
         private ICollection<ProcedimentosPreAdocao> procedimentosPreAdocaos { get; set; }
         private ICollection<Interesse> interesses { get; set; }
+
     }
 }
