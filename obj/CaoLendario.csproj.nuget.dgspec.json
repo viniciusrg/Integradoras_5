@@ -1,41 +1,25 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Usuario\\Documents\\Integradoras\\Integradoras_5\\CaoLendario.csproj": {}
+    "C:\\Users\\Carlos\\Documents\\Ciencia da Computação\\5º Perído\\Atividade Integradora\\Integradoras_5\\CaoLendario.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\Integradoras\\Integradoras_5\\CaoLendario.csproj": {
+    "C:\\Users\\Carlos\\Documents\\Ciencia da Computação\\5º Perído\\Atividade Integradora\\Integradoras_5\\CaoLendario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Integradoras\\Integradoras_5\\CaoLendario.csproj",
+        "projectUniqueName": "C:\\Users\\Carlos\\Documents\\Ciencia da Computação\\5º Perído\\Atividade Integradora\\Integradoras_5\\CaoLendario.csproj",
         "projectName": "CaoLendario",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\Integradoras\\Integradoras_5\\CaoLendario.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\Integradoras\\Integradoras_5\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-    "C:\\Users\\whaly\\Documents\\Faculdade\\5º Periodo\\Atividade Integradora V\\Integradoras_5\\CaoLendario.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\whaly\\Documents\\Faculdade\\5º Periodo\\Atividade Integradora V\\Integradoras_5\\CaoLendario.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\whaly\\Documents\\Faculdade\\5º Periodo\\Atividade Integradora V\\Integradoras_5\\CaoLendario.csproj",
-        "projectName": "CaoLendario",
-        "projectPath": "C:\\Users\\whaly\\Documents\\Faculdade\\5º Periodo\\Atividade Integradora V\\Integradoras_5\\CaoLendario.csproj",
-        "packagesPath": "C:\\Users\\whaly\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\whaly\\Documents\\Faculdade\\5º Periodo\\Atividade Integradora V\\Integradoras_5\\obj\\",
+        "projectPath": "C:\\Users\\Carlos\\Documents\\Ciencia da Computação\\5º Perído\\Atividade Integradora\\Integradoras_5\\CaoLendario.csproj",
+        "packagesPath": "C:\\Users\\Carlos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Carlos\\Documents\\Ciencia da Computação\\5º Perído\\Atividade Integradora\\Integradoras_5\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\whaly\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> grupo3
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -60,7 +44,6 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-<<<<<<< HEAD
               "version": "[3.1.2, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
@@ -83,14 +66,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.0.0, )"
-=======
-              "version": "[3.1.4, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
               "version": "[3.1.3, )"
->>>>>>> grupo3
             }
           },
           "imports": [
@@ -111,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
