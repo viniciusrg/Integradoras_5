@@ -7,10 +7,10 @@ namespace CaoLendario.Models
 {
     public class ProcedimentosPreAdocao
     {
-        private string descricao;
-        private DateTime data;
+      
 
-        public string Descricao { get => descricao; set => descricao = value; }
-        public DateTime Data { get => data; set => data = value; }
+        public string Descricao { get; set; }
+        public DateTime Data { get; set; }
+        public Animal Animal { get; set; }
     }
 }
