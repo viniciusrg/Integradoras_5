@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using CaoLendario.Models;
 
 namespace CaoLendario.Models
 {
@@ -10,19 +11,13 @@ namespace CaoLendario.Models
     {
         private ApplicationDbContext context;
 
-
-        //public IQueryable<ProcedimentosPreAdocao> ProcedimentosPreAdocao => context.ProcedimentosPreAdocao;
-
-
         public EFProcedimentosPreAdocaoRepositorio(ApplicationDbContext ctx)
         {
             context = ctx;
         }
 
-
         public IQueryable<ProcedimentosPreAdocao> ProcedimentosPreAdocao => context.ProcedimentosPreAdocao
         .Include(a => a.Animal);
-
 
         public void Create(ProcedimentosPreAdocao procedimentosPreAdocao)
         {

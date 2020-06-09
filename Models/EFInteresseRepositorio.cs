@@ -14,11 +14,7 @@ namespace CaoLendario.Models
         {
             context = ctx;
         }
-
-        public IQueryable<Interesse> Interesses => context.Interesse;
-
         public IQueryable<Interesse> Interesse => context.Interesse
-
         .Include(a => a.Adotante);
 
         
