@@ -10,22 +10,20 @@ namespace CaoLendario.Models
     {
         private ApplicationDbContext context;
 
-<<<<<<< Updated upstream
-        public IQueryable<ProcedimentosPreAdocao> ProcedimentosPreAdocao => context.ProcedimentosPreAdocao;
 
-=======
->>>>>>> Stashed changes
+        //public IQueryable<ProcedimentosPreAdocao> ProcedimentosPreAdocao => context.ProcedimentosPreAdocao;
+
+
         public EFProcedimentosPreAdocaoRepositorio(ApplicationDbContext ctx)
         {
             context = ctx;
         }
-<<<<<<< Updated upstream
-=======
+
 
         public IQueryable<ProcedimentosPreAdocao> ProcedimentosPreAdocao => context.ProcedimentosPreAdocao
         .Include(a => a.Animal);
 
->>>>>>> Stashed changes
+
         public void Create(ProcedimentosPreAdocao procedimentosPreAdocao)
         {
             context.Add(procedimentosPreAdocao);
