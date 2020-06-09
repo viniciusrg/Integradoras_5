@@ -14,7 +14,11 @@ namespace CaoLendario.Models
         {
             context = ctx;
         }
+<<<<<<< Updated upstream
         public IQueryable<Interesse> Interesses => context.Interesse
+=======
+        public IQueryable<Interesse> Interesse => context.Interesse
+>>>>>>> Stashed changes
         .Include(a => a.Adotante);
 
         

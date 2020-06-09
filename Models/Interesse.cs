@@ -8,9 +8,17 @@ namespace CaoLendario.Models
 
         public class Interesse
         {
+<<<<<<< Updated upstream
             private DateTime data;
             private Boolean adotado;
 
+=======
+        //private DateTime data;
+        //private Boolean adotado;
+
+            public int InteresseID { get; set; }
+        
+>>>>>>> Stashed changes
             public DateTime Data { get; set; }
             public Boolean Adotado { get; set; }
 

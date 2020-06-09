@@ -7,7 +7,11 @@ namespace CaoLendario.Models
 {
     interface IInteresseRepositorio
     {
+<<<<<<< Updated upstream
         IQueryable<Interesse> Interesses { get; }
+=======
+        IQueryable<Interesse> Interesse { get; }
+>>>>>>> Stashed changes
 
         public void Create(Interesse interesse);
         public Interesse ObterInteresse(int id);

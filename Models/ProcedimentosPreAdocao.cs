@@ -10,5 +10,9 @@ namespace CaoLendario.Models
         private string descricao { get; set; }
         private DateTime data { get; set; }
         public int ProcedimentosPreAdocaoID { get; set; }
+<<<<<<< Updated upstream
+=======
+        public Animal Animal { get; set; }
+>>>>>>> Stashed changes
     }
 }
