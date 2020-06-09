@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using CaoLendario.Models;
 
 namespace CaoLendario.Models
 {
@@ -16,7 +17,7 @@ namespace CaoLendario.Models
         {
             context = ctx;
         }
-        public IQueryable<ProcedimentosPreAdocao> context.ProcedimentosPreAdocao;
+        IQueryable<ProcedimentosPreAdocao> context.ProcedimentosPreAdocao;
         public void Create(ProcedimentosPreAdocao procedimentosPreAdocao)
         {
             context.Add(procedimentosPreAdocao);
