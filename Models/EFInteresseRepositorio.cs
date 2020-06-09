@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace CaoLendario.Models
 {
@@ -13,8 +14,11 @@ namespace CaoLendario.Models
         {
             context = ctx;
         }
-        public IQueryable<Interesse> Interesse => context.Interesse
+        public IQueryable<Interesse> Interesses => context.Interesse
         .Include(a => a.Adotante);
+
+        
+
         public void Create(Interesse interesse)
         {
             context.Add(interesse);
