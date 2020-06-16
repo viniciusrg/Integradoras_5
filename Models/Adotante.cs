@@ -8,7 +8,7 @@ namespace CaoLendario.Models
 
     public class Adotante : User
     {
-        private int AdotanteID { get; set; }
+       
         private enum tipoMoradia { Casa, Apartamento, Sítio, Outros }
         private enum prefPorte {Pequeno, Médio, Grande, Indiferente  }
         private enum prefFilhote { Sim, Não, Indiferente }
