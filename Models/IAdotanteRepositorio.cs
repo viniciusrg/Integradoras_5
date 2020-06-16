@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CaoLendario.Models
 {
-	interface IAdotanteRepositorio
+	public interface IAdotanteRepositorio
 	{
 		IQueryable<Adotante> Adotantes { get; }
 		public Adotante ObterAdotante(int id);

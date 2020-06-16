@@ -8,12 +8,10 @@ using System.Threading.Tasks;
 
 namespace CaoLendario.Controllers
 {
-	public class AdotanteController : User
+	public class AdotanteController : Controller
 	{
         private IAdotanteRepositorio repositorio;
         private ApplicationDbContext context;
-
-        public object ViewBag { get; private set; }
 
         public AdotanteController(IAdotanteRepositorio repo, ApplicationDbContext ctx)
         {
@@ -26,8 +24,8 @@ namespace CaoLendario.Controllers
         public IActionResult Edit(int id)
         {
             var adotante = context.Adotantes.Find(id);
-            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(f
-           => f.Nome), "UserID", "Nome");
+            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(a
+           => a.Nome), "UserID", "Nome");
             return View(adotante);
         }
         [HttpPost]
@@ -45,26 +43,17 @@ namespace CaoLendario.Controllers
             return View(adotante);
         }
         [HttpPost]
-        public IActionResult Delete(AdotanteController adotante)
+        public IActionResult Delete(Adotante adotante)
         {
             repositorio.Delete(adotante);
             return RedirectToAction("List");
-        }
-
-
-        //Consulta
-        [HttpGet]
-        public IActionResult New()
-        {
-            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(a => a.Nome), "UserID", "nome");
-            return View();
         }
 
         //Create
         [HttpGet]
         public IActionResult New()
         {
-            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(f => f.Nome), "UserID", "Nome");
+            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(a => a.Nome), "UserID", "Nome");
             return View();
         }
         [HttpPost]
@@ -73,5 +62,13 @@ namespace CaoLendario.Controllers
             repositorio.Create(adotante);
             return RedirectToAction("List");
         }
+
+        [HttpGet]
+        public IActionResult Details(int id)
+        {
+            var Adotante = repositorio.ObterAdotante(id);
+            return View(Adotante);
+        }
+
     }
 }
