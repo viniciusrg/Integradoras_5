@@ -55,6 +55,5 @@ namespace CaoLendario.Controllers
             ViewBag.UserID = new SelectList(context.Adotante.OrderBy(a => a.Nome), "UserID", "nome");
             return View();
         }
-
     }
 }
