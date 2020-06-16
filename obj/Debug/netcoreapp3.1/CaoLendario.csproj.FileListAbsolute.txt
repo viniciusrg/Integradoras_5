@@ -144,3 +144,5 @@ C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj
 C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.AssemblyInfo.cs
 C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.dll
 C:\Unifenas\Atividades integradoras\2020_1\AI5\Integradoras_5\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.pdb
+C:\Users\Usuario\Documents\it53\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.dll
+C:\Users\Usuario\Documents\it53\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.pdb
