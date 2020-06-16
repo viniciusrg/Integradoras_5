@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace CaoLendario.Models
 {
+
     public class User
     {
         public int UserID { get; set; }
@@ -16,8 +17,9 @@ namespace CaoLendario.Models
         public string cep { get; set; }
         public string uf { get; set; }
         public string telefone { get; set; }
-
-        public virtual ICollection<ProcedimentosPosAdocao> posadocao { get; set; }
-        public virtual ICollection<ProcedimentosPreAdocao> preadocao { get; set; }
+        public ICollection<ProcedimentosPosAdocao> posadocao { get; set; }
+        public ICollection<ProcedimentosPreAdocao> preadocao { get; set; }
     }
+
+
 }
