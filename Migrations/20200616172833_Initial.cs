@@ -16,6 +16,9 @@ namespace CaoLendario.Migrations
                     NomeAnimal = table.Column<string>(nullable: true),
                     Nascimento = table.Column<DateTime>(nullable: false),
                     Peso = table.Column<double>(nullable: false),
+                    Sexo = table.Column<int>(nullable: false),
+                    TipoPelagem = table.Column<int>(nullable: false),
+                    Porte = table.Column<int>(nullable: false),
                     GostaBrincar = table.Column<bool>(nullable: false),
                     Temperamento = table.Column<string>(nullable: true),
                     RelacionaOutroCao = table.Column<bool>(nullable: false),
@@ -86,7 +89,9 @@ namespace CaoLendario.Migrations
                 {
                     ProcedimentosPosAdocaoID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AnimalID = table.Column<int>(nullable: true),
+                    descricao = table.Column<string>(nullable: true),
+                    data = table.Column<DateTime>(nullable: false),
+                    AnimalID = table.Column<int>(nullable: false),
                     UserID = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
@@ -97,7 +102,7 @@ namespace CaoLendario.Migrations
                         column: x => x.AnimalID,
                         principalTable: "Animais",
                         principalColumn: "AnimalID",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_ProcedimentosPosAdocao_Users_UserID",
                         column: x => x.UserID,
@@ -112,7 +117,9 @@ namespace CaoLendario.Migrations
                 {
                     ProcedimentosPreAdocaoID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    AnimalID = table.Column<int>(nullable: true),
+                    descricao = table.Column<string>(nullable: true),
+                    data = table.Column<DateTime>(nullable: false),
+                    AnimalID = table.Column<int>(nullable: false),
                     UserID = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
@@ -123,7 +130,7 @@ namespace CaoLendario.Migrations
                         column: x => x.AnimalID,
                         principalTable: "Animais",
                         principalColumn: "AnimalID",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_ProcedimentosPreAdocao_Users_UserID",
                         column: x => x.UserID,
