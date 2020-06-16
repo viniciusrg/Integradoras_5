@@ -13,6 +13,5 @@ namespace CaoLendario.Models
 		public void Edit(Adotante adotante);
 		public void Delete(Adotante adotante);
 
-
 	}
 }
