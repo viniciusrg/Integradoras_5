@@ -1,4 +1,6 @@
 ﻿using CaoLendario.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,9 +8,12 @@ using System.Threading.Tasks;
 
 namespace CaoLendario.Controllers
 {
-	public class AdotanteController
+	public class AdotanteController : User
 	{
+        private IAdotanteRepositorio repositorio;
         private ApplicationDbContext context;
+
+        public object ViewBag { get; private set; }
 
         public AdotanteController(IAdotanteRepositorio repo, ApplicationDbContext ctx)
         {
@@ -21,8 +26,8 @@ namespace CaoLendario.Controllers
         public IActionResult Edit(int id)
         {
             var adotante = context.Adotantes.Find(id);
-            ViewBag.AdotanteId = new SelectList(context.Adotantes.OrderBy(f
-           => f.Nome), "AdotanteID", "Nome");
+            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(f
+           => f.Nome), "UserID", "Nome");
             return View(adotante);
         }
         [HttpPost]
@@ -40,7 +45,7 @@ namespace CaoLendario.Controllers
             return View(adotante);
         }
         [HttpPost]
-        public IActionResult Delete(AdotanteControler adotante)
+        public IActionResult Delete(AdotanteController adotante)
         {
             repositorio.Delete(adotante);
             return RedirectToAction("List");
@@ -51,8 +56,22 @@ namespace CaoLendario.Controllers
         [HttpGet]
         public IActionResult New()
         {
-            ViewBag.UserID = new SelectList(context.Adotante.OrderBy(a => a.Nome), "UserID", "nome");
+            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(a => a.Nome), "UserID", "nome");
             return View();
+        }
+
+        //Create
+        [HttpGet]
+        public IActionResult New()
+        {
+            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(f => f.Nome), "UserID", "Nome");
+            return View();
+        }
+        [HttpPost]
+        public IActionResult New(Adotante adotante)
+        {
+            repositorio.Create(adotante);
+            return RedirectToAction("List");
         }
     }
 }
