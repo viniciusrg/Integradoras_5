@@ -10,6 +10,7 @@ namespace CaoLendario.Controllers
 {
 	public class AdotanteController : Controller
 	{
+
         private IAdotanteRepositorio repositorio;
         private ApplicationDbContext context;
 
