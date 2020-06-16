@@ -5,15 +5,13 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SportStore.Models;
+using CaoLendario.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.EntityFrameworkCore.SqlServer;
-
-
-namespace SportStore
+//using Microsoft.EntityFrameworkCore;
+//using Microsoft.EntityFrameworkCore.Design;
+//using Microsoft.EntityFrameworkCore.SqlServer;
+namespace CaoLendario
 {
     public class Startup
     {
@@ -26,11 +24,11 @@ namespace SportStore
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseSqlServer(
-                Configuration["Data:SportStoreProdutos:ConnectionString"]));
-            services.AddTransient<IProdutoRepositorio, EFProdutoRepositorio>();
-            services.AddTransient<IFabricanteRepositorio, EFFabricanteRepositorio>();
+            //services.AddDbContext<ApplicationDbContext>(options =>
+            //options.UseSqlServer(Configuration["Data:CaoLendario:ConnectionString"]));
+            services.AddTransient<IAnimalRepositorio, EFAnimalRepositorio>();
+            services.AddTransient<IProcedimentosPosAdocaoRepositorio, EFProcedimentosPosAdocaoRepositorio>();
+            services.AddTransient<IProcedimentosPreAdocaoRepositorio, EFProcedimentosPreAdocaoRepositorio>();
             services.AddMvc();                        
         }
 
@@ -52,9 +50,9 @@ namespace SportStore
              endpoints.MapControllerRoute(
              name: "default",
              pattern: "{controller}/{action}/{id?}",
-             defaults: new { controller = "Produto", action = "List" });
+             defaults: new { controller = "Animal", action = "List" });
             });
-            SeedData.EnsurePopulated(app);
+            //SeedData.EnsurePopulated(app);
         }
     }
 }

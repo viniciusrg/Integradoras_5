@@ -1,0 +1,78 @@
+﻿@model CaoLendario.Models.ProcedimentosPreAdocao
+
+@{
+    ViewData["Title"] = "Pré Adocão";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section>
+    <div class="content">
+        <div class="form">
+            <h1 class="title">@ViewBag.Title</h1>
+            <h2 class="sub-title">
+                <span style="font-size: 28px;">Registre os procedimentos de pré adoção</span></br>
+                <span style="font-size: 10px;">que foram realizados em nosso animalzinho até o momento.</span></br>
+                <span style="font-size: 23px;">Para isto basta preencher o formulário a seguir e salvar!</span>
+            </h2>
+            <form id="form-pos" action="">
+                <select id="txt-animal" class="input">
+                    <option value="Animal">Animal 1</option>
+                    <option value="Animal 2">Animal 2</option>
+                </select>
+                <textarea id="txt-descricao" class="input" placeholder="Descrição"> </textarea>
+                <input id="txt-data" class="input" type="date" placeholder="Data">
+                <input id="btn-salvar" class="btn-solid" type="submit" value="Salvar">
+            </form>
+        </div>
+        <div class="sidebar">
+            <h1 class="side-title">Últimos procedimentos</h1>
+            <button id="reload" class="btn-menu">
+                <p>Atualizado a 6h <img src="~/assets/Reload.svg" alt="reload" /></p>
+            </button>
+            <button class="btn-filter">
+                <p>TODOS OS REGISTROS</p>
+                <span>Filtrar <img src="~/assets/Filter.svg" alt="filter" /></span>
+            </button>
+            <div class="item-content">
+                <div class="item">
+                    <div class="item-header">
+                        <img src="~/assets/Calendario.svg" />
+                        <p>15/06/2020</p>
+                    </div>
+                    <div class="item-body">
+                        <p class="item-cod">CÓD ANIMAL: 001563</p>
+                        <div class="item-container">
+                            <img src="~/assets/PetCare.svg" />
+                            <p>
+                                Descrição completa de outro procedimento que foi realizado no animal pelo medico veterinário
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <img src="~/assets/Calendario.svg" />
+                        <p>25/05/2020</p>
+                    </div>
+                    <div class="item-body">
+                        <p class="item-cod">CÓD ANIMAL: 0012658</p>
+                        <div class="item-container">
+                            <img src="~/assets/PetCare.svg" />
+                            <p>
+                                Descrição completa de outro procedimento que foi realizado no animal pelo medico veterinário
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-navigation-group">
+                <button class="btn-nav nav-active">1</button>
+                <button class="btn-nav">2</button>
+                <button class="btn-nav">3</button>
+                <button class="btn-nav">4</button>
+                <button class="btn-nav">...</button>
+                <button class="btn-nav">8</button>
+            </div>
+        </div>
+    </div>
+</section>

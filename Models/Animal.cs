@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CaoLendario.Models;
 
 namespace CaoLendario.Models
 {
     public class Animal
     {
         public int AnimalID { get; set; }
+        public string NomeAnimal { get; set; }
         public DateTime Nascimento { get; set; }
         public double Peso { get; set; }
         public TSexo Sexo { get; }
@@ -22,8 +22,12 @@ namespace CaoLendario.Models
         public string HistoricoVida { get; set; }
         public string urlFoto { get; set; }
 
-    }
+        public virtual ICollection<ProcedimentosPosAdocao> ProcedimentosPosAdocao { get; set; }
 
+        public virtual ICollection<ProcedimentosPreAdocao> ProcedimentosPreAdocao { get; set; }
+
+        public virtual ICollection<Interesse> Interesse { get; set; }
+    }
     #region Definição das Enum
     public enum TPelagem
     {
@@ -46,5 +50,3 @@ namespace CaoLendario.Models
     }
     #endregion
 }
-
-

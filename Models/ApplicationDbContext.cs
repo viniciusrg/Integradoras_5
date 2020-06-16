@@ -8,7 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace CaoLendario.Models
 {
-    public class ApplicationDbContext : DbContext 
+    public class ApplicationDbContext : DbContext //classe que define BD
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) 
         { }
@@ -18,7 +18,9 @@ namespace CaoLendario.Models
         public DbSet<Adotante> Adotantes { get; set; }
         public DbSet<ProcedimentosPreAdocao> ProcedimentosPreAdocao { get; set; }
         public DbSet<ProcedimentosPosAdocao> ProcedimentosPosAdocao { get; set; }
-        public DbSet<MedicoVeterinario> MedicoVeterinario { get; set; }
+        public DbSet<User> Users { get; set; }
+
+        public DbSet<MedicoVeterinario> MedicosVeterinario { get; set; }
 
     }
 }
