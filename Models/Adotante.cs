@@ -5,7 +5,11 @@ using System.Threading.Tasks;
 
 namespace CaoLendario.Models
 {
-
+<<<<<<< HEAD
+	public class Adotante
+	{
+	}
+=======
     public class Adotante : User
     {
         private int AdotanteID { get; set; }
@@ -15,5 +19,7 @@ namespace CaoLendario.Models
         private enum prefCastrado { Sim, Não, Indiferente }
         private enum prefSexo { Fêmea, Macho}
         private enum alimentacao { Ração, Comida, Ambos, Outro}
+        
     }
+>>>>>>> origin/grupo2
 }
