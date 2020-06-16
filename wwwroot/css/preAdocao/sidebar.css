@@ -114,17 +114,17 @@
 }
 
 .btn-nav {
-  text-decoration:none;
-  width: 40px;
-  line-height:40px;
-  border-radius: 5px;
-  border: 1px var(--primary-color) solid;
-  color: var(--primary-color);
-  font-weight: 900;
-  text-align: center;
-  background-color: transparent;
-  cursor: pointer;
-  transition: all ease-in 0.2s;
+    text-decoration: none;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px var(--primary-color) solid;
+    color: var(--primary-color);
+    font-weight: 900;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
 }
 
 .btn-nav:hover,

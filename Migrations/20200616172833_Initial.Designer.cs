@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CaoLendario.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200616004848_Initial")]
+    [Migration("20200616172833_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,6 +43,9 @@ namespace CaoLendario.Migrations
                     b.Property<double>("Peso")
                         .HasColumnType("float");
 
+                    b.Property<int>("Porte")
+                        .HasColumnType("int");
+
                     b.Property<bool>("PossuiDeficiencia")
                         .HasColumnType("bit");
 
@@ -52,8 +55,14 @@ namespace CaoLendario.Migrations
                     b.Property<bool>("RelacionaOutroCao")
                         .HasColumnType("bit");
 
+                    b.Property<int>("Sexo")
+                        .HasColumnType("int");
+
                     b.Property<string>("Temperamento")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TipoPelagem")
+                        .HasColumnType("int");
 
                     b.Property<string>("urlFoto")
                         .HasColumnType("nvarchar(max)");
@@ -98,11 +107,17 @@ namespace CaoLendario.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("AnimalID")
+                    b.Property<int>("AnimalID")
                         .HasColumnType("int");
 
                     b.Property<int?>("UserID")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("data")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("descricao")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ProcedimentosPosAdocaoID");
 
@@ -120,11 +135,17 @@ namespace CaoLendario.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("AnimalID")
+                    b.Property<int>("AnimalID")
                         .HasColumnType("int");
 
                     b.Property<int?>("UserID")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("data")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("descricao")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ProcedimentosPreAdocaoID");
 
@@ -214,9 +235,11 @@ namespace CaoLendario.Migrations
 
             modelBuilder.Entity("CaoLendario.Models.ProcedimentosPosAdocao", b =>
                 {
-                    b.HasOne("CaoLendario.Models.Animal", null)
+                    b.HasOne("CaoLendario.Models.Animal", "Animal")
                         .WithMany("ProcedimentosPosAdocao")
-                        .HasForeignKey("AnimalID");
+                        .HasForeignKey("AnimalID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("CaoLendario.Models.User", null)
                         .WithMany("posadocao")
@@ -227,7 +250,9 @@ namespace CaoLendario.Migrations
                 {
                     b.HasOne("CaoLendario.Models.Animal", "Animal")
                         .WithMany("ProcedimentosPreAdocao")
-                        .HasForeignKey("AnimalID");
+                        .HasForeignKey("AnimalID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("CaoLendario.Models.User", null)
                         .WithMany("preadocao")
