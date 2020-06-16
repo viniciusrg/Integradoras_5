@@ -32,7 +32,6 @@ namespace CaoLendario.Controllers
             return RedirectToAction("List");
         }
 
-
         //Delete
         [HttpGet]
         public IActionResult Delete(int id)
