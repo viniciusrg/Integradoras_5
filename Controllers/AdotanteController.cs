@@ -61,9 +61,10 @@ namespace CaoLendario.Controllers
         public IActionResult New(Adotante adotante)
         {
             repositorio.Create(adotante);
-            return RedirectToAction("List");
+            return RedirectToAction("Details");
         }
 
+        //Consulta/Exibe
         [HttpGet]
         public IActionResult Details(int id)
         {
