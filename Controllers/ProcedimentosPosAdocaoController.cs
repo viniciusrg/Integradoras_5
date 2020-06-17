@@ -40,10 +40,10 @@ namespace CaoLendario.Controllers
         }
 
         [HttpPost]
-        public IActionResult New(ProcedimentosPosAdocao procedimentosPosAdocao)
+        public IActionResult New(ProcedimentosPosAdocao procedimentoPosAdocao)
         {
-            repositorio.Create(procedimentosPosAdocao);
-            return Redirect("New");
+            repositorio.Create(procedimentoPosAdocao);
+            return RedirectToAction("New");
         }
 
         public IActionResult Details(int id)
