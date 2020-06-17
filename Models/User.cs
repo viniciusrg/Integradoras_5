@@ -16,5 +16,6 @@ namespace CaoLendario.Models
         public string cep { get; set; }
         public string uf { get; set; }
         public string telefone { get; set; }
+
     }
 }

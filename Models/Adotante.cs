@@ -13,7 +13,6 @@ namespace CaoLendario.Models
         public prefCastrado castrado { get; set;}
         public prefSexo sexo { get; set;}
         public alimentacao talimentacao { get; set;}
-        
     }
     public enum tipoMoradia { Casa, Apartamento, Sítio, Outros }
     public enum prefPorte { Pequeno, Médio, Grande, Indiferente }
