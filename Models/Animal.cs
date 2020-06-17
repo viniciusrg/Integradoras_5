@@ -20,7 +20,7 @@ namespace CaoLendario.Models
         public bool RelacionaGato { get; set; }
         public bool PossuiDeficiencia { get; set; }
         public string HistoricoVida { get; set; }
-        public string urlFoto { get; set; }
+        public string UrlFoto { get; set; }
 
         public virtual ICollection<ProcedimentosPosAdocao> ProcedimentosPosAdocao { get; set; }
 

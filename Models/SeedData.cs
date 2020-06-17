@@ -33,7 +33,7 @@ namespace CaoLendario.Models
                     RelacionaGato = true,
                     PossuiDeficiencia = false,
                     HistoricoVida = "15 anos de vida",
-                    urlFoto = "https://bordalo.observador.pt/500x,q85/https://s3.observador.pt/wp-content/uploads/2020/03/16193524/95572844_770x433_acf_cropped.jpg",
+                    UrlFoto = "https://bordalo.observador.pt/500x,q85/https://s3.observador.pt/wp-content/uploads/2020/03/16193524/95572844_770x433_acf_cropped.jpg",
 
                 },
                new Animal
@@ -50,7 +50,7 @@ namespace CaoLendario.Models
                    RelacionaGato = true,
                    PossuiDeficiencia = false,
                    HistoricoVida = "10 anos de vida",
-                   urlFoto = "https://www.acessa.com/animais/arquivo/noticias/2019/05/10-praca-bom-pastor-tera-feira-adocao-caes-gatos/foto.jpg",
+                   UrlFoto = "https://www.acessa.com/animais/arquivo/noticias/2019/05/10-praca-bom-pastor-tera-feira-adocao-caes-gatos/foto.jpg",
                },
                new Animal
                {
@@ -66,7 +66,7 @@ namespace CaoLendario.Models
                    RelacionaGato = true,
                    PossuiDeficiencia = false,
                    HistoricoVida = "5 anos de vida",
-                   urlFoto = "https://mid.curitiba.pr.gov.br/2019/capa/00260110.jpg",
+                   UrlFoto = "https://mid.curitiba.pr.gov.br/2019/capa/00260110.jpg",
                },
                new Animal
                {
@@ -82,7 +82,7 @@ namespace CaoLendario.Models
                    RelacionaGato = true,
                    PossuiDeficiencia = false,
                    HistoricoVida = "8 anos de vida",
-                   urlFoto = "https://mid.curitiba.pr.gov.br/2019/capa/00260110.jpg",
+                  UrlFoto = "https://mid.curitiba.pr.gov.br/2019/capa/00260110.jpg",
                },
                new Animal
                {
@@ -98,7 +98,7 @@ namespace CaoLendario.Models
                    RelacionaGato = true,
                    PossuiDeficiencia = false,
                    HistoricoVida = "10 anos de vida",
-                   urlFoto = "https://upload.wikimedia.org/wikipedia/commons/2/24/Babylone_3ans1.jpg",
+                   UrlFoto = "https://upload.wikimedia.org/wikipedia/commons/2/24/Babylone_3ans1.jpg",
                });
                 context.SaveChanges();
             }
