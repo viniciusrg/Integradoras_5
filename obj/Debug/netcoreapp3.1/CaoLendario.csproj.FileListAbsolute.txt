@@ -285,3 +285,10 @@ C:\ASP\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.Views.pdb
 C:\ASP\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.csproj.CopyComplete
 C:\ASP\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.dll
 C:\ASP\Integradoras_5\obj\Debug\netcoreapp3.1\CaoLendario.pdb
+C:\ASP\Integradoras_5\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\View.cshtml.g.cs
+C:\ASP\Integradoras_5\obj\Debug\netcoreapp3.1\Razor\Views\Adocao\View.cshtml.g.cs
+C:\ASP\Integradoras_5\obj\Debug\netcoreapp3.1\Razor\Views\Animal\New.cshtml.g.cs
+C:\ASP\Integradoras_5\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
+C:\ASP\Integradoras_5\obj\Debug\netcoreapp3.1\Razor\Views\Adocao\Index.cshtml.g.cs
+C:\ASP\Integradoras_5\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Home.cshtml.g.cs
+C:\ASP\Integradoras_5\obj\Debug\netcoreapp3.1\Razor\Views\Animal\Index.cshtml.g.cs

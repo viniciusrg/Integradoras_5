@@ -25,8 +25,7 @@ namespace CaoLendario.Controllers
         public IActionResult Edit(int id)
         {
             var adotante = context.Adotantes.Find(id);
-            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(a
-           => a.Nome), "UserID", "Nome");
+            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(a=> a.nome), "UserID", "Nome");
             return View(adotante);
         }
         [HttpPost]
@@ -54,16 +53,17 @@ namespace CaoLendario.Controllers
         [HttpGet]
         public IActionResult New()
         {
-            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(a => a.Nome), "UserID", "Nome");
+            ViewBag.UserID = new SelectList(context.Adotantes.OrderBy(a => a.nome), "UserID", "Nome");
             return View();
         }
         [HttpPost]
         public IActionResult New(Adotante adotante)
         {
             repositorio.Create(adotante);
-            return RedirectToAction("List");
+            return RedirectToAction("Details");
         }
 
+        //Consulta/Exibe
         [HttpGet]
         public IActionResult Details(int id)
         {

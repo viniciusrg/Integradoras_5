@@ -8,7 +8,7 @@ namespace CaoLendario.Models.ViewModels
 {
     public class ProcedimentosPosAdocaoListViewModel
     {
-        public ProcedimentosPosAdocao procedimentosPosAdocao { get; set; }
+        public ProcedimentosPosAdocao procedimentoPosAdocao { get; set; }
         public IEnumerable<ProcedimentosPosAdocao> ProcedimentosPosAdocao { get; set; }
         public PagingInfo PagingInfo { get; set; }
     }
