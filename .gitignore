@@ -54,3 +54,4 @@ obj/Debug/netcoreapp3.1/CaoLendario.csprojAssemblyReference.cache
 .vs/CaoLendario/DesignTimeBuild/.dtbcache
 .vs/CaoLendario/v16/Server/sqlite3/storage.ide
 .vs/CaoLendario/v16/.suo
+.vs/CaoLendario/config/applicationhost.config

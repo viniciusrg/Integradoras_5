@@ -36,7 +36,7 @@ namespace CaoLendario
                 endpoints.MapControllerRoute(
                 name: "default",
                 pattern: "{controller}/{action}/{id?}",
-                defaults: new { controller = "ProcedimentosPosAdocao", action = "New" });
+                defaults: new { controller = "Dashboard", action = "Index" });
             });
             SeedData.EnsurePopulated(app);
         }
