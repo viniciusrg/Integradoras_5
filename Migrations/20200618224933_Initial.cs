@@ -25,7 +25,7 @@ namespace CaoLendario.Migrations
                     RelacionaGato = table.Column<bool>(nullable: false),
                     PossuiDeficiencia = table.Column<bool>(nullable: false),
                     HistoricoVida = table.Column<string>(nullable: true),
-                    urlFoto = table.Column<string>(nullable: true)
+                    UrlFoto = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -47,6 +47,12 @@ namespace CaoLendario.Migrations
                     uf = table.Column<string>(nullable: true),
                     telefone = table.Column<string>(nullable: true),
                     Discriminator = table.Column<string>(nullable: false),
+                    moradia = table.Column<int>(nullable: true),
+                    porte = table.Column<int>(nullable: true),
+                    filhote = table.Column<int>(nullable: true),
+                    castrado = table.Column<int>(nullable: true),
+                    sexo = table.Column<int>(nullable: true),
+                    talimentacao = table.Column<int>(nullable: true),
                     CRMV = table.Column<string>(nullable: true),
                     Data = table.Column<DateTime>(nullable: true)
                 },
