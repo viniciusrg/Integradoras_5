@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CaoLendario.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200616172833_Initial")]
+    [Migration("20200618224933_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -64,7 +64,7 @@ namespace CaoLendario.Migrations
                     b.Property<int>("TipoPelagem")
                         .HasColumnType("int");
 
-                    b.Property<string>("urlFoto")
+                    b.Property<string>("UrlFoto")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("AnimalID");
@@ -201,6 +201,24 @@ namespace CaoLendario.Migrations
             modelBuilder.Entity("CaoLendario.Models.Adotante", b =>
                 {
                     b.HasBaseType("CaoLendario.Models.User");
+
+                    b.Property<int>("castrado")
+                        .HasColumnType("int");
+
+                    b.Property<int>("filhote")
+                        .HasColumnType("int");
+
+                    b.Property<int>("moradia")
+                        .HasColumnType("int");
+
+                    b.Property<int>("porte")
+                        .HasColumnType("int");
+
+                    b.Property<int>("sexo")
+                        .HasColumnType("int");
+
+                    b.Property<int>("talimentacao")
+                        .HasColumnType("int");
 
                     b.HasDiscriminator().HasValue("Adotante");
                 });
