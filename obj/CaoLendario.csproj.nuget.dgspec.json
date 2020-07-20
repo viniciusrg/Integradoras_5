@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ASP\\Integradoras_5\\CaoLendario.csproj": {}
+    "C:\\Users\\vinic\\Desktop\\Faculdade\\GITHUB 5000\\Integradoras_5\\CaoLendario.csproj": {}
   },
   "projects": {
-    "C:\\ASP\\Integradoras_5\\CaoLendario.csproj": {
+    "C:\\Users\\vinic\\Desktop\\Faculdade\\GITHUB 5000\\Integradoras_5\\CaoLendario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ASP\\Integradoras_5\\CaoLendario.csproj",
+        "projectUniqueName": "C:\\Users\\vinic\\Desktop\\Faculdade\\GITHUB 5000\\Integradoras_5\\CaoLendario.csproj",
         "projectName": "CaoLendario",
-        "projectPath": "C:\\ASP\\Integradoras_5\\CaoLendario.csproj",
-        "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
-        "outputPath": "C:\\ASP\\Integradoras_5\\obj\\",
+        "projectPath": "C:\\Users\\vinic\\Desktop\\Faculdade\\GITHUB 5000\\Integradoras_5\\CaoLendario.csproj",
+        "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vinic\\Desktop\\Faculdade\\GITHUB 5000\\Integradoras_5\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -80,6 +75,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -88,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
